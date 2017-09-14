@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+    
+    <description>Spring MVC Configuration</description>
+    
+    <!-- 加载配置属性文件 -->
+	<context:property-placeholder ignore-unresolvable="true" location="classpath*:/application.properties" />
+	
+	<!-- 使用Annotation自动注册Bean,只扫描@Controller -->
+	<context:component-scan base-package="com.mall"><!-- base-package 如果多个，用“,”分隔 -->
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<!-- 设置请求映射编码，解决@ResponseBody乱码问题 -->
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                    <property name="supportedMediaTypes">
+                        <list>
+                            <value>text/plain;charset=UTF-8</value>
+                        </list>
+                    </property>
+                </bean>
+            </list>
+        </property>
+    </bean>
+    
+	<!--  启动注解,默认的注解映射的支持，org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -->
+	<mvc:annotation-driven/>
+
+	<!-- 对静态资源文件的访问， 将无法mapping到Controller的path交给default servlet handler处理 -->
+	<mvc:default-servlet-handler/>
+
+
+	<!-- 视图文件解析配置 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+		<property name="prefix" value="${web.view.prefix}"/>
+		<property name="suffix" value="${web.view.suffix}"/>
+	</bean>
+	 <!-- i18n国际化-->
+	 <mvc:interceptors>
+	 	<mvc:interceptor>
+			 <mvc:mapping path="/**" />
+		     <mvc:exclude-mapping path="/images/**"/> 
+		     <mvc:exclude-mapping path="/group1/**"/> 
+		     <mvc:exclude-mapping path="/css/**"/> 
+		     <mvc:exclude-mapping path="/js/**"/> 
+			 <mvc:exclude-mapping path="/user/loginUI"/>
+			 <mvc:exclude-mapping path="/supplier/registUI"/>
+			 <mvc:exclude-mapping path="/store/info"/>
+			 <mvc:exclude-mapping path="/modelFile/**"/>
+			<bean class="com.mall.interceptor.AjaxTimeOutFilter" />
+		</mvc:interceptor>
+		
+	    <mvc:interceptor>
+			 <mvc:mapping path="/**" />
+		     <mvc:exclude-mapping path="/images/**"/> 
+		     <mvc:exclude-mapping path="/group1/**"/> 
+		     <mvc:exclude-mapping path="/css/**"/> 
+		     <mvc:exclude-mapping path="/js/**"/>
+			<mvc:exclude-mapping path="/modelFile/**"/>
+			<bean class="com.mall.interceptor.LoginInterceptor" />
+		</mvc:interceptor>
+		
+		<mvc:interceptor>
+		 <mvc:mapping path="/**" />
+	     <bean class="com.mall.interceptor.LocaleChangeInterceptor" />
+	    </mvc:interceptor>
+	    
+        <mvc:interceptor>
+			 <mvc:mapping path="/**" />
+		     <mvc:exclude-mapping path="/images/**"/> 
+		     <mvc:exclude-mapping path="/group1/**"/> 
+		     <mvc:exclude-mapping path="/css/**"/> 
+		     <mvc:exclude-mapping path="/js/**"/> 
+		     <mvc:exclude-mapping path="/modelFile/**"/>
+			 <bean class="com.mall.interceptor.TokenInterceptor" />
+		</mvc:interceptor>
+	 </mvc:interceptors>
+	 <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" >
+	    <property name="cookieName" value="language"/>  
+        <property name="cookieMaxAge" value="3600"/>  
+        <property name="defaultLocale" value="en_US"/>
+	 </bean>
+	 <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		 <property name="basename" value="globalMessages"/>
+		 <property name="useCodeAsDefaultMessage" value="true"/>
+	 </bean>
+	 
+	 <!-- 拦截器的配置 -->
+	<!-- <mvc:interceptors>
+		<mvc:interceptor>
+		
+			需拦截的地址
+            一级目录
+             <mvc:mapping path="/*" />
+	         
+	         		
+			<mvc:mapping path="/*.ajax" />
+			<mvc:mapping path="/*.htm" />
+
+            二级目录
+	        <mvc:mapping path="/*/*.do" />
+			<mvc:mapping path="/*/*.ajax" />
+			<mvc:mapping path="/*/*.htm" />
+			需排除拦截的地址
+			<mvc:exclude-mapping path="/login.htm"/> 
+			<mvc:exclude-mapping path="/user/login"/>
+			<mvc:exclude-mapping path="/user/regist"/>
+			
+		</mvc:interceptor>
+	</mvc:interceptors> -->
+	 
+	
+	<!-- 定义无Controller的path<->view直接映射 -->
+	<mvc:view-controller path="/" view-name="redirect:${web.view.index}"/>
+	
+	<!-- 静态文件（css、js、images）配置不经过DispatchServelet处理 
+	<mvc:resources location="/resources/" mapping="/resources/**" />
+	-->
+	
+	<!-- 上传文件拦截，设置最大上传文件大小   10M=10*1024*1024(B)=10485760 bytes -->  
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+        <property name="maxUploadSize" value="${web.maxUploadSize}" />  
+    </bean>
+    
+	<!-- 异常解析器 -->
+	<bean id="simpleMappingExceptionResolver"
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<!-- 方法不支持错误 -->
+				<prop
+					key="org.springframework.web.HttpRequestMethodNotSupportedException">common/500</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,108 @@
+
+.logo3{width: 1000px; height: auto; margin: 0 auto; margin-top:20px;}
+.logo3 .p1{width: 1000px; height: 35px; line-height: 35px;}
+.logo3 .p1 span{color: #ff4800;}
+.logo3 .p2{width: 1000px; height: auto; text-align: center;}
+.logo3 .p2 img{padding-top:21px; }
+
+
+/* .ding{width: 998px; height: auto; margin: 0 auto; background: #fffced; border: 1px solid #ffbf7a; text-align:left\9;}
+.ding .ding1{height: 35px; border-bottom: 1px solid #ffbf7a;  line-height:35px; padding-left:25px; font-weight:bold; font-size:14px;}
+.ding .ding1 span{color:#ff4800;}
+.ding .ding2{width: 475px; height: auto; margin:15px 0 15px 50px;}
+.ding .ding2 p{line-height: 22px;}
+.ding .ding2 p .s1{font-weight: bold;}
+.ding .ding2 p .s2{color: #ff4800;} */
+
+
+.ding{width: 998px; height:auto; margin: 0 auto; background: #fffced; border: 1px solid #ffbf7a; text-align:left\9;}
+.ding .ding1{height: 35px;  line-height:35px; border-bottom: 1px solid #ffbf7a;  padding-left:25px; font-weight:bold; font-size:14px;}
+.ding .ding1 span{color:#ff4800;}
+.ding .ding2{width: 575px; margin:10px 0 15px 28px;}
+.ding .ding2 h2{font-size: 14px; height:30px; line-height:30px;}
+.ding .ding2 p{width:670px; height:30px; line-height: 30px; display: block;}
+.ding .ding2 p .time{width:170px; height:30px; float:left; text-align:left;}
+.ding .ding2 p .time1{width:200px; height:30px; float:left; text-align:left; word-break:break-all; white-space: nowrap;
+overflow: hidden; text-overflow: ellipsis;} 
+.ding .ding2 p .state{width:300px; height:30px; float:right; text-align:left;}
+
+
+.xing{width: 998px; height:auto; margin: 0 auto; border: 1px solid #b8cee8; margin-top:40px; position: relative; margin-bottom:20px;}
+.xing .xing1{position: absolute;top:-24px; left: 70px; width: 103px; height: 23px; border-top: 1px solid #b8cee8; border-left:1px solid #b8cee8;  border-right:1px solid #b8cee8; background: #ffffff;}
+.xing .xing1 p{text-align: center; line-height: 23px;}
+.xing .xing2{width: 950px; border-bottom: 1px solid #c8c8c8; margin:15px 0 0 20px;}
+.xing .xing2 dl{margin:0 0 0 55px;}
+.xing .xing2 dl dt{margin-bottom:4px; font-weight:bold;}
+.xing .xing2 dl dd{line-height:20px; }
+
+.xing .xing3{margin-top:10px; margin-left:55px;}
+.xing .xing3 table{}
+.xing .xing3 table .t1{font-weight:bold;}
+.xing .xing3 table tr td{line-height:25px; padding:0 20px 0 20px;}
+
+.ov{width:832px; display: block; float: right; text-align:left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.ov1{width:400px; display: block; text-align:left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+
+
+.xing .xing4{ margin:0 auto; margin-top:10px;}
+.zong{margin:0 10px;text-align:left\9; height:auto; line-height:30px; }
+.zong .z1{height:30px;background:#dedede;width:auto;}
+.zong .z1 span{display:block;float:left;text-align:center;}
+.zong .z1 .sp{width:380px;}
+.zong .z1 .jg{width:190px;}
+.zong .z1 .sl{width:190px;}
+.zong .z1 .sfk{width:190px;}
+.zong .z1 .ztai{}
+
+.zong .z2{height: auto; margin:10px 0 5px 0;overflow:hidden;}
+.zong .z2 dl{width: 380px; height: 80px; float: left; clear:both;}
+.zong .z2 dl dt{float: left; margin-right:10px; width: 80px; height:80px;}
+.zong .z2 dl dd{width: 280px; height:80px; line-height: 20px; text-align:left;overflow: hidden;}
+.zong .z2 img{width:80px; min-height:80px;}
+.zong .z2 p{float: left; width:570px; padding:10px 0 10px 0; vertical-align: top;  height:auto;}
+.zong .z2 p .s1{width:190px; display:block; color: #ff4e00; float:left; text-align:center;}
+.zong .z2 p .s2{width:190px; display:block; float:left; text-align:center;}
+.zong .z2 p .s3{width:190px; display:block; float:left; text-align:center;}
+.zong .z2 p .s4{display:none;width: 85px; height: 45px; line-height: 25px; display: block; float: right; margin-top: -20px; height:auto;}
+
+/* .c3{text-align:left\9;  margin: 0 0 0 10px;}
+.c3 h2{margin:20px 0 20px 10px; display: block; font-size: 14px;}
+.c3 .one{width: 971px; height: 30px; line-height: 30px; background:#eeeeee;}
+.c3 .one .sp{margin-left:210px;}
+.c3 .one .jg{margin-left:260px;}
+.c3 .one .sl{margin-left:100px;}
+.c3 .one .sfk{margin-left:80px;}
+.c3 .one .ztai{margin-left:50px;}
+
+.c3{margin-right:10px;}
+.c3 .two{height: auto; margin-bottom:5px; }
+.c3 .two .two1{height:80px; }
+.c3 .two .two1 dl{width: 355px; height: 80px; float: left; margin-right: 115px; clear:both;}
+.c3 .two .two1 dl dt{float: left; margin-right:40px; width: 80px;}
+.c3 .two .two1 dl dd{line-height: 20px;}
+
+.c3 .two .two1 p{float: left; padding: 10px 5px; vertical-align: top;  height:auto;}
+.c3 .two .two1 p .s1{width:142px; display:block; color: #ff4e00; float:left; text-align:left; }
+.c3 .two .two1 p .s2{width:112px; display:block; float:left; text-align:left;}
+.c3 .two .two1 p .s3{width:115px; display:block; float:left; text-align:left;}
+.c3 .two .two1 p .s4{width: 85px; height: 45px; line-height: 25px; display: block; float: right; margin-top: -20px; height:auto;} */
+
+.sq{width:998px; min-height: 200px; text-align:center;  margin:10px 0 0 0; }
+.sq .t1{height:30px; line-height:30px; background-color:#ddd;}
+.sq span{width:240px; display: block; float:left; height:30px; line-height:30px;}
+span.dpl-tip-inline-warning {float: inherit;clear: both;color: #e42a2a;font-size: 12px;height: 18px;line-height: 23px;margin: 3px auto 20px;vertical-align: middle; width:auto;}
+.ov2{width:240px; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+ .xing5{margin:0 0 10px 850px; clear:both;}
+ .xing5 p span{color: #ff4800; font-size: 16px; font-weight: bold;}
+.t2_wrap{border-bottom:1px solid #ff9c2b; margin-bottm:5px;}
+.sq_wrap{text-align: center; font-size:14px;  margin:10px auto;}
+.sq_wrap th{height:35px; line-height:35px; border:1px solid #c7c7c7; background:#f5f6f6;}
+.sq_wrap td{height:35px; line-height:35px; border:1px solid #c7c7c7; padding: 0 10px;}
+.sq_wrap td input{height:20px; line-height:20px;}
+.zengj{width:60px; height:25px; line-height:25px; border:none; background:#ff9c2b; color:#fff; margin-bottom:5px; border-radius: 5px; cursor: pointer;}
+.sub{width:100px; height:40px; line-height:25px; border:none; background:#ff9c2b; color:#fff; margin-bottom:5px; border-radius: 5px; cursor: pointer;}
+.tabborder{border: 1px solid #c7c7c7;margin: 0 0 20px;padding: 0 0 10px;}
+
+

@@ -1,0 +1,669 @@
+#art-main
+{
+  background: #FFFFFF;
+  margin: 0 auto;
+  font-size: 13px;
+  font-family: 宋体, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  cursor: default;
+  overflow: hidden;
+}
+.logo_dl{ width:251px; height:28px; background:url(../images.png) no-repeat 0 0; margin:0 auto;}
+.w {
+    margin: 0 auto;
+    padding: 0;
+    width: 990px;
+    
+}
+#shortcut-2013 .w{
+  height: 30px;
+  background: none repeat scroll 0 0 #F7F7F7;
+}
+
+/*login*/
+.w li {
+    height: 30px;
+    padding: 0 11px 0 12px;
+    line-height: 30px;
+}
+.fr {
+    height: 30px;
+    overflow: visible;
+    float:right
+}
+
+
+/*login html*/
+#logo {
+    float: none;
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+}
+#logo b {
+	background: url("../images/login-wel.png") no-repeat rgba(0, 0, 0, 0);
+    height: 60px;
+    left: 180px;
+    position: absolute;
+    top: 18px;
+    width: 300px;
+}
+#formlogin #entry {
+	  
+    background: none repeat scroll 0 0 #E8E8E8;
+    border-radius: 3px;
+    margin: 60px auto 55px;
+    padding: 5px;
+    position: relative;
+}
+.w1 {
+    margin: 0 auto;
+    width: 890px;
+}
+#entry .item-ifo .i-name {
+    background: url("../images/login-name.png")  #FFFFFF;
+    height: 25px;
+    top: 6px;
+    width: 20px;
+}
+
+#entry .item-ifo .i-pass {
+    background: url("../images/login-pass.png") #FFFFFF;
+    height: 25px;
+    top: 6px;
+    width: 20px;
+}
+#entry .item-ifo .ico {
+    position: absolute;
+    right: 8px;
+    z-index: 5;
+}
+
+#entry .extra-en {
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+#entry .mc {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E1E1E1;
+    height: 360px;
+}
+#entry .form {
+    /*height: 354px;
+    overflow: hidden;
+    position: absolute;
+    right: 32px;
+    left: 50%;
+    margin-left: -160px;
+    top: 100px;
+    width: 320px;*/
+     height: 354px;
+    overflow: hidden;
+    position: absolute;
+    right: 32px;
+    top: 30px;
+    width: 320px;
+}
+#entry .fore1 {
+    z-index: 10;
+}
+#entry .item {
+    min-height: 64px;
+    line-height: 26px;
+    overflow: visible;
+    position: relative;
+    width: 320px;
+    z-index: 1;
+    margin-top: 12px;
+}
+#entry .item span {
+    color: #999999;
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 1px;
+}
+#entry .item .item-ifo {
+    position: relative;
+    width: 307px;
+}
+#entry .text {
+    border: 1px solid #CCCCCC;
+    float: none;
+    font-family: arial,"宋体";
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding: 4px 20px 4px 3px;
+    width: 282px;
+}
+#entry .login-btn2013 {
+    height: 52px;
+}
+#entry .btn-entry-en {
+    background: url("../images/login-but-en.png") no-repeat !important;
+    font-family: "microsoft yahei";
+    height: 34px;
+    line-height: 100px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 307px;
+}
+#entry .btn-entry-cn {
+    background: url("../images/login-but-cn.png") no-repeat !important;
+    font-family: "microsoft yahei";
+    height: 34px;
+    line-height: 100px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 307px;
+}
+#entry .btn-entry-en:hover{
+    background: url("../images/login-but1-en.png") no-repeat !important;
+}
+#entry .btn-entry-cn:hover{
+    background: url("../images/login-but1-cn.png") no-repeat !important;
+}
+.free-regist {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border-radius: 0 0 3px 3px;
+    bottom: -31px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 5px 5px;
+    position: absolute;
+    right: 42px;
+    text-align: center;
+    width: 115px;
+}
+.free-regist span {
+    background: none repeat scroll 0 0 #7CBE56;
+    border-radius: 0 0 3px 3px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    height: 32px;
+    text-align: center;
+    width: 115px;
+}
+.hide {
+    display: none;
+}
+#entry .null, #entry .error, #loginname_error.error, #loginpwd_error.error, #authcode_error.error {
+    background: none repeat scroll 0 0 #FFEBEC;
+    border: 1px solid #FFBDBF;
+    color: #E6393D;
+    float: none;
+    left: 0;
+    line-height: 16px;
+    padding: 2px 0 2px 3px;
+    position: absolute;
+    top: 34px;
+    width: 302px;
+    z-index: 100;
+}
+#entry .focus {
+    color: #999999;
+    display: none;
+    line-height: 22px;
+}
+.form label, .form input, .form select, .form textarea, .form button, .form .label {
+    float: left;
+    font-size: 12px;
+}
+.free-regist a:link, .free-regist a:visited {
+    color: #FFFFFF;
+}
+a:link, a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+#footer-2013 .copyright {
+    margin: 10px 0;
+}
+#footer-2013 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+.btn-img {
+    border: 0 none;
+    cursor: pointer;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+/*regist*/
+.ftx04, .flk04 a:link, .flk04 a:visited, a.flk04:link, a.flk04:visited {
+    color: #FF0000;
+}
+ul {
+    list-style-type: none;
+}
+#regist {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-bottom: 10px;
+    width: 990px;
+}
+#regist .mt {
+    background: none repeat scroll 0 0 #F2F2F2;
+}
+#regist .mt {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: -1px;
+    overflow: visible;
+    padding-right: 10px;
+    position: relative;
+}
+#regist .hover-btn {
+    background: url("../images/hover-btn.jpg") no-repeat scroll 0 0 !important;
+}
+#regist .mt, #regist .mt h2, #regist .mt span {
+    height: 32px;
+    line-height: 32px;
+}
+#regist .mt .extra {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+#regist #entry {
+    background: none repeat scroll 0 0 #E8E8E8;
+    border-radius: 3px;
+    margin: 0;
+    /*padding: 5px;*/
+    position: relative;
+}
+#regist #entry .btn-entry {
+    background: url("../images/regist-but.png") no-repeat !important;
+    font-family: "microsoft yahei";
+    height: 34px;
+    line-height: 100px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 300px;
+}
+#regist #entry .btn-entry:hover{
+    background: url("../images/regist-but1.png") no-repeat !important;
+}
+#regist .w1{
+  width: 100%;
+}
+.mt .extra {
+    float: right;
+}
+#regist .mt span {
+    float: right;
+    text-align: right;
+}
+.ftx13, .flk13 a:link, .flk13 a:visited, a.flk13:link, a.flk13:visited {
+    color: #005AA0;
+}
+a:link, a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+.m, .mt, .mc, .mb {
+    overflow: hidden;
+}
+#regist #entry .form {
+    position: relative;
+    float: left;
+    width: 100%;
+    top: 50px;
+    /*margin-left: -300px;*/
+    height: 800px;
+    right: 0;
+}
+#regist .mc{
+  height: 950px;
+}
+#regist #regName_error {
+    cursor: pointer;
+    float: none;
+    margin-top: 0;
+}
+#regist .null, #regist .error {
+    color: #FF0000;
+}
+#regist .focus, #regist .error {
+    background: none repeat scroll 0 0 #FFEBEB;
+    border: 1px solid #FFBDBE;
+    color: #E4393C;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 5px;
+    position: absolute;
+    left: 230px;
+    top: 0;
+    width: 260px;
+}
+#regist .item .item-ifo {
+    position: relative;
+    width: 200px;
+}
+body .fl {
+    float: left;
+}
+#regist .item-ifo{
+  float: left;
+}
+#regist .item {
+    height: 60px;
+    line-height: 34px;
+    padding-top: 9px;
+    position: relative;
+    z-index: 1;
+    width: 600px;
+}
+#select-regName {
+    overflow: visible;
+}
+#regist .label {
+    color: #999999;
+    font-size: 14px;
+    padding-right: 10px;
+    text-align: right;
+    width: 290px;
+}
+#regist .text{
+  width: 200px;
+}
+.form label, .form input, .form select, .form textarea, .form button, .form .label {
+    float: left;
+    font-size: 12px;
+}
+
+#regist h3 {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-top: 1px solid #E7E7E7;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    padding: 2px 16px 3px;
+}
+h3 {
+    font-size: 14px;
+}
+#regist .focus, #regist .null, #regist .error {
+    background: none repeat scroll 0 0 #FFEBEB;
+    border: 1px solid #FFBDBE;
+    color: #E4393C;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    position: absolute;
+    right: -298px;
+    top: 0;
+    width: 260px;
+}
+#regist .focus {
+    background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #DDDDDD;
+    color: #999999;
+    line-height: 34px;
+}
+#regist .focus {
+    color: #666666;
+}
+
+#entry .highlight1 {
+    border: 1px solid #7abd54;
+}
+#entry .highlight2 {
+    border: 1px solid #f00;
+    color: #f00;
+}
+
+#regist .highlight2 {
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
+#regist .highlight1 {
+    border: 1px solid #7ABD54;
+    color: #333333;
+}
+/*return*/
+#content {
+    margin: 0 auto;
+    min-height: 600px;
+    width: 990px;
+}
+
+.hd {
+    padding: 25px 0 10px;
+}
+
+.hd_title {
+    display: inline;
+    font: 18px/1.6 "microsoft yahei","黑体","华文细黑";
+    margin-right: 10px;
+}
+
+.password {
+    font-size: 14px;
+    padding: 20px;
+}
+.flowsteps {
+    height: 48px;
+    margin: 0 auto 40px;
+    width: 950px;
+}
+.flowsteps ol {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+.flowsteps .num4 li, .flowsteps .num4 .last {
+    width: 33.3%;
+}
+.flowsteps .current, .flowsteps .current span {
+    color: #FF6824;
+}
+.flowsteps li {
+    background: url("../images/forgetpass-li.png") repeat-x scroll 0 13px rgba(0, 0, 0, 0);
+    color: #8B8B8B;
+    display: inline;
+    float: left;
+    font-family: "microsoft yahei","黑体","华文细黑";
+    font-size: 14px;
+    height: 48px;
+    line-height: 23px;
+    list-style: none outside none;
+}
+.flowsteps span {
+    float: left;
+    width: auto;
+}.flowsteps .current span i {
+    background-image: url("../images/forgetpass-i.png");
+}
+.flowsteps .first i, .flowsteps .first em, .flowsteps .last i, .flowsteps .last em {
+    left: 0;
+}
+.flowsteps .first i {
+    margin: 0 auto;
+    width: 100%;
+}
+.flowsteps .last {
+    background: none repeat scroll 0 0 #FFFFFF;
+    position: absolute;
+    right: 0;
+    width: auto !important;
+}
+.flowsteps li i {
+    background: url("../images/forgetpass-i1.png") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    height: 30px;
+    left: -17px;
+    line-height: 28px;
+    position: relative;
+    text-align: center;
+    width: 34px;
+}
+.password .kv_list {
+    padding-left: 170px;
+}
+.kv_item {
+    padding: 5px 0 5px 120px;
+}
+.password .kv_label {
+    font-size: 14px;
+    vertical-align: middle;
+}
+.kv_label {
+    display: inline;
+    float: left;
+    line-height: 26px;
+    margin-left: -120px;
+    text-align: right;
+    width: 110px;
+}
+.password .i_text, .password .msg, .password img {
+    margin-bottom: 0;
+}
+.i_text {
+    border: 1px solid #C8C8C8;
+    height: 16px;
+    line-height: 16px;
+    margin: 0;
+    padding: 4px 3px;
+    width: 180px;
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+.place_holder {
+    color: #999999;
+    display: none;
+    font-size: 12px;
+}
+.password img {
+    vertical-align: middle;
+}
+.password .i_text, .password .msg, .password img {
+    margin-bottom: 0;
+}
+img, object {
+    border: medium none;
+    outline: medium none;
+}
+
+.flowsteps em {
+    display: block;
+    left: -50%;
+    position: relative;
+    text-align: center;
+}
+em {
+    font-style: normal;
+}
+.btn {
+    background: url("../images/btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 84px;
+}
+#page {
+    color: #404040;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 100%;
+}
+#header {
+    border-bottom: 1px solid #D2D2D2;
+    height: 95px;
+}
+#content, #footer, #header, #page {
+    margin-left: auto;
+    margin-right: auto;
+}
+#header h1 {
+    height: 35px;
+    margin: 0 auto;
+    position: relative;
+    top: 23px;
+    width: 990px;
+}
+
+#header .logo_tb {
+    background: url("../images/login-logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 60px;
+    outline: medium none;
+    text-indent: -9999em;
+    width: 180px;
+}
+a {
+    color: #3366CC;
+    text-decoration: none;
+}
+
+#header .logo_aq {
+    background: url("../images/forgetpass-wel.png") no-repeat scroll 10px 15px rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 60px;
+    outline: medium none;
+    text-indent: -9999em;
+    width: 115px;
+}
+
+#capslock {
+    background-color: #FFFDEE;
+    border: 1px solid #EDD288;
+    color: #FF6600;
+    display: none;
+    height: 30px;
+    left: 300px;
+    line-height: 30px;
+    padding: 0 10px;
+    position: absolute;
+    top: -20px;
+    width: 248px;
+    z-index: 3;
+}
+
+#entry .form-control{float:left;width:60px;}
+.yzm-bar{float:left;}
+.yzm-bar img{float:left;margin:0 10px;cursor:pointer;}
+.yzm-bar a{float:left;display:block;line-height:34px;}
+
+.t_footer{background:url(../images/f.jpg) repeat-x;bottom: 14px;position: fixed;text-align: center;width:100%;}
+.logo_dl{ width:251px; height:28px; background:url(../images/sjmanger.png) no-repeat 0 0; margin:10px auto;}

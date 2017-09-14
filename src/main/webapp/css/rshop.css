@@ -1,0 +1,70 @@
+body{font-family: 微软雅黑;}
+.header{width: 100%; height:39px; background: #2e3035;  border-bottom: 1px solid #000811;}
+.header .nav{max-width: 1200px; margin: 0 auto; height: 39px; clear: both;}
+.header .nav h2{float: left;}
+.header .nav h2 a img{padding: 8px 0 0 10px;}
+.header .nav ul{float: right; }
+.header .nav ul li{float: left;}
+.header .nav ul li.on{ background: #161b21;}
+.header .nav ul li.on i{display: block;}
+.header .nav ul li a{display: inline-block; width: 63px; height: 39px; line-height: 39px; text-align: center; position: relative;}
+.header .nav ul li a img{padding-top: 10px;}
+.header .nav ul li i{display:block; width:0; height:0; border-width:8px 8px 0; border-style:solid; border-color:#161b21 transparent transparent; position:absolute; top:40px; left:23px; display: none;}
+
+.header .nav ul li a:hover{background: #161b21;}
+.header .nav ul li a:hover i{display: block;} 
+.tit{}
+.tit img{max-width: 100%; display: block; overflow: hidden; margin-top: 20px; border-top:1px solid #e8e8e8; }
+
+.cont{width: 100%; margin: 0 auto; text-align: center; overflow: hidden;}
+.cont a img{max-width: 100%; display: block; overflow:hidden; }
+
+.mr{margin-top: 30px;}
+
+.pic{width: 373px; height: 789px; background: url(../images/te2.png) no-repeat; margin:  0 auto; padding-top: 117px; overflow: hidden;}
+.pic .ov{width: 330px; height: 567px; margin-left: 30px; overflow-x:hidden; overflow-y:auto;}
+.pic .ov img{width: 320px;}
+
+.bo{background-image: url('../images/bg.jpg'); background-size: cover; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.jpg',
+    sizingMethod='scale'); overflow: hidden;}
+
+
+
+.center{width: 1000px;  margin: 0 auto; margin-top:10px;}
+.left{float: left;}
+.right{width: 840px; float: right;}
+.shop{}
+.shop ul{margin-right: -20px;}
+.shop ul li{border: 1px solid #e2e9ee; background: #f5f6f6;  width: 182px; padding:5px; height: 328px; float: left; margin:0 20px 20px 0;}
+
+.shop ul li .pre_t{width: 182px; height: 289px;}
+.shop ul li .pre_t a img{width: 182px; height: 289px; overflow: hidden;}
+.shop ul li .pre_b{height: 23px; line-height: 23px; margin-top: 10px; padding: 0 15px; }
+.shop ul li .pre_b .btn1{width: 68px;margin:0 auto; display:block; border:none; height: 23px; line-height: 19px; color: #ffffff; background: #ff9010; cursor: pointer; font-family: 微软雅黑; font-size: 12px; border-radius: 3px; border:1px solid #f48300;}
+.shop ul li .pre_b .btn2{width: 68px;margin:0 auto; display:block; border:none; height: 23px; line-height: 19px; color: #ffffff; background: #ff6600; cursor: pointer; font-family: 微软雅黑; font-size: 12px; border-radius: 3px; border:1px solid #ea5e00;}
+.shop ul li .pre_b .btn2-no{background: #ccc; border:1px solid #ccc; }
+.shop ul li .pre_b .btn3{width: 68px; border:none; height: 23px; line-height: 19px; color: #ffffff; background: #bababa; float: right;  font-family: 微软雅黑; font-size: 12px; border-radius: 3px; border:1px solid #acadad;}
+
+.clearfix:after{content:""; display:block; clear:both;}
+.clearfix {zoom:1;}
+.bj{ position:fixed; width:100%; height:100%; top:0; left:0; background:#f2f2f2;}
+.bj h1{ width:297px; height:39px; background:url(../images/logo.png) no-repeat; text-indent:-999px; position:absolute; top:57px; left:270px;}
+.bj h1 a{ display:block; width:297px; height:39px;}
+.bj .layer{ position:absolute; width:900px; height:370px; top:144px; background:#fff; left:50%; margin-left:-450px;}
+.bj .layer .pic{ width:491px; height:295px; background:url(../images/pic.png) no-repeat; position:absolute; left:-10px; top:48px;}
+.bj .layer .tab{ width:320px; height:267px; position:absolute; top:48px; right:44px;}
+.bj .layer .tab .one{ margin-bottom:8px;}
+.bj .layer .tab .one span{ float:left; font-weight:bold;}
+.bj .layer .tab .one a{ float:right; font-weight:bold; color:#b50d0d;}
+.bj .layer .tab .inp{ width:316px; height:34px; border:1px solid #ccc; text-indent:10px;}
+.bj .layer .tab .two{ margin-bottom:16px; position:relative;}
+.bj .layer .tab .little{ width:90px; height:34px; border:1px solid #ccc; text-indent:10px;}
+.bj .layer .tab .three{ margin-bottom:20px;}
+.bj .layer .tab .three input,.bj .layer .tab .three em,.bj .layer .tab .three a{ float:left; margin-right:10px;}
+.bj .layer .tab .three a{ line-height:36px; height:36px;}
+.bj .layer .tab .four{ margin-bottom:8px;}
+.bj .layer .tab .sub{ width:318px; height:36px; background:#b50d0d; color:#fff; border:0; font-size:14px; cursor:pointer;}
+.bj .layer .tab .two em{ color:#ccc; position:absolute; top:14px; left:10px;}
+
+
+

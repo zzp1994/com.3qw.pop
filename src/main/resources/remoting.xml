@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+ 	 http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+ 	 http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context-3.2.xsd" >
+    <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+    <dubbo:application name="suplier-web" /> 
+    
+   	<context:property-placeholder ignore-unresolvable="true" location="classpath*:/dubboConf.properties" />
+
+	<!-- <dubbo:registry id="server" protocol="zookeeper" address="192.168.1.54:2181,192.168.1.55:2181,192.168.1.56:2181"/>  -->
+ 	<!-- url="dubbo://192.168.100.119:20882/com.mall.supplier.order.api.rpc.PurchaseOrderService" -->
+ 	<!-- <dubbo:registry id="server" protocol="zookeeper" address="192.168.1.54:2181,192.168.1.55:2181,192.168.1.56:2181"/>  -->
+ 	<dubbo:registry protocol="zookeeper" address="zk01.mall.com:2181,zk02.mall.com:2181,zk03.mall.com:2181"/>
+
+	<dubbo:registry id="server" protocol="zookeeper" address="zk01.mall.com:2181,zk02.mall.com:2181,zk03.mall.com:2181"/> 
+	<dubbo:consumer check="false" /> 
+	
+	<dubbo:reference id="supplierUserManagerService"
+		interface="com.mall.supplier.service.SupplierUserManagerService"
+		version="${mall-supplier.version}" />
+
+	<dubbo:reference id="supplierManagerService"
+		interface="com.mall.supplier.service.SupplierManagerService"
+		version="${mall-supplier.version}"   />
+
+	<dubbo:reference id="supplierRoleManagerService"
+		interface="com.mall.supplier.service.SupplierRoleManagerService"
+		version="${mall-supplier.version}" />
+
+	<dubbo:reference id="categoryServiceRpc"
+		interface="com.mall.category.api.rpc.CategoryServiceRpc" 
+		version="${mall-category.version}" />
+
+	<dubbo:reference id="baseDataServiceRpc"
+		interface="com.mall.category.api.rpc.BaseDataServiceRpc" 
+		version="${mall-category.version}" />
+
+<!-- 	<dubbo:reference id="supplierProductService" url="dubbo://192.168.100.36:20888/com.mall.supplier.product.api.SupplierProductService" -->
+<!-- 		interface="com.mall.supplier.product.api.SupplierProductService" -->
+<!-- 		version="${mall-supplier-product.version}" /> -->
+		
+	<dubbo:reference id="supplierProductService" interface="com.mall.supplier.product.api.SupplierProductService"
+		version="${mall-supplier-product.version}" timeout="1000000"   />
+
+	<dubbo:reference id="b2cProductDetailService" interface="com.mall.supplier.product.api.B2cProductDetailService"
+					 version="${mall-supplier-product.version}" />
+					 
+	<!-- <dubbo:reference id="supplierProductService" url="dubbo://127.0.0.1:20888" 
+		interface="com.mall.supplier.product.api.SupplierProductService"
+		version="${mall-supplier-product.version}" timeout="10000" />
+
+	<dubbo:reference id="b2cProductDetailService" url="dubbo://127.0.0.1:20888" 
+					 interface="com.mall.supplier.product.api.B2cProductDetailService"
+					 version="${mall-supplier-product.version}" />
+					  -->
+	<dubbo:reference id="supplierProductAuditService"
+					 interface="com.mall.supplier.product.api.SupplierProductAuditService"
+					 version="${mall-supplier-product.version}" />
+	<dubbo:reference id="productTagsService"
+					 interface="com.mall.dealer.productTags.api.ProductTagsService
+"
+					 version="${mall-dealer-product.version}"  />				 
+
+
+	<dubbo:reference id="purchaseOrderService"
+		interface="com.mall.supplier.order.api.rpc.PurchaseOrderService"
+		version="${mall-supplier-order.version}" />
+
+	<dubbo:reference id="stockSupplyService"
+		interface="com.mall.stock.api.rpc.StockSupplyService" 
+		version="${mall-stock.version}" />
+
+	<dubbo:reference id="dealerOrderService"
+		interface="com.mall.dealer.order.api.rpc.DealerOrderService"
+		version="${mall-dealer-order.version}" />
+
+	<dubbo:reference id="supplierBrandManagerService"
+		interface="com.mall.supplier.service.SupplierBrandManagerService"
+		version="${mall-supplier.version}" />
+
+
+	<dubbo:reference id="brandServiceRpc"
+		interface="com.mall.category.api.rpc.BrandServiceRpc" 
+		version="${mall-category.version}" />
+
+	<dubbo:reference id="supplierDraftProductService"
+		interface="com.mall.supplier.product.draft.SupplierDraftProductService"
+		version="${mall-supplier-product.version}" />
+	
+<!-- 	<dubbo:reference id="dealerProductService" url="dubbo://192.168.100.22:20885/com.mall.dealer.product.api.DealerProductService" interface="com.mall.dealer.product.api.DealerProductService" version="${mall-dealer-product.version}"/> -->
+	
+	<dubbo:reference id="dealerProductService" interface="com.mall.dealer.product.api.DealerProductService" version="${mall-dealer-product.version}"/>
+	
+	<!-- 商品Excel服务 -->
+	<dubbo:reference id="dealerProductExportExcelService" interface="com.mall.dealer.product.api.DealerProductExportExcelService" version="${mall-dealer-product.version}"/>
+
+	<!-- 供应商店铺服务 -->
+	<dubbo:reference id="supplierStoreService" interface="com.mall.supplier.service.SupplierStoreService" version="${mall-supplier.version}"/>
+	
+	<!-- pop商品信息服务 -->
+	<dubbo:reference id="dealerPopProductService" interface="com.mall.dealer.product.api.pop.DealerPopProductService" version="${mall-dealer-product.version}" />
+	
+	<!-- B2C订单服务  -->
+	<dubbo:reference id="customerOrderService" interface="com.mall.customer.order.api.rpc.CustomerOrderService"  version="${mall-customer-order.version}" />
+	<!-- B2C订单服务  -->  
+	<dubbo:reference id="customerOrderExportSevice" interface="com.mall.customer.order.api.rpc.CustomerOrderExportSevice" version="${mall-customer-order.version}"/>
+	<!-- B2C用户服务  -->
+	<dubbo:reference id="userService" interface="com.mall.customer.service.UserService" version="${mall-customer.version}"/>
+	<dubbo:reference id="homeNumRecordService" interface=" com.mall.customer.service.HomeNumRecordService" version="${mall-customer.version}"/>
+	
+	<dubbo:reference id="supplierNumRecordService" interface="com.mall.customer.service.SupplierNumRecordService" version="${mall-customer.version}"/>
+	<!-- （卖家）物流接口 -->
+	<dubbo:reference id="logisticTempService" interface="com.mall.dealer.product.retailer.api.LogisticTempService" version="${mall-dealer-product.version}"/>
+	<!--  物流接口 -->
+	<dubbo:reference id="shipOrderB2CService" interface="com.mall.retailer.order.api.rpc.ShipOrderB2CService" version="${mall-retailer-order.version}"/>
+
+	<dubbo:reference id="dealerProductSkuService" interface="com.mall.dealer.product.api.DealerProductSkuService" version="${mall-dealer-product.version}" />
+
+	<dubbo:reference id="stockService" interface="com.mall.stock.api.rpc.StockService" version="${mall-stock.version}"/>
+	<dubbo:reference id="myBrandService" interface="com.mall.category.api.own.MyBrandService" version="${mall-category.version}"/>
+<!-- 	url="dubbo://127.0.0.1:12010/com.mall.customer.service.SqwAccountRecordService"	 -->
+	<dubbo:reference id="sqwAccountRecordService"	
+	 interface="com.mall.customer.service.SqwAccountRecordService" version="${mall-customer.version}" />
+
+	<dubbo:reference id="virementSettingService"
+					 interface="com.mall.customer.service.VirementSettingService"
+					 version="${mall-customer.version}"/>
+
+	<dubbo:reference id="productCostPriceSettingService"
+					 interface="com.mall.customer.service.ProductCostPriceSettingService"
+					 version="${mall-customer.version}"/>
+<!--      url="dubbo://127.0.0.1:12009/com.mall.supplier.service.SupplierRegionService"  -->
+	<dubbo:reference id="regionService"
+     interface="com.mall.supplier.service.SupplierRegionService" version="${mall-supplier.version}"/>
+</beans>

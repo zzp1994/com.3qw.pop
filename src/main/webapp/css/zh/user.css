@@ -1,0 +1,60 @@
+body {
+
+       width:100%\9;
+       text-align:center\9;
+    }
+
+
+.wrap{
+	clear:both;
+	width: 1000px;
+	height:100%;
+	margin: 0 auto;
+	
+	width:1000px\9; 
+	text-align:left\9; 
+	margin:0 auto\9; 
+	
+}
+
+.right{width: 840px; min-height:508px; margin-left:10px; margin-top:10px;}
+.right .title{border:1px solid #e2e9ee; height:28px;line-height: 30px;padding-left: 20px;}
+.right .title p{float: left;font-size: 12px;color: #666;}
+.right .title .c1{color: #336699;font-weight: bold;}
+
+.right .cont{border: 1px solid #e2e9ee;}
+.right .cont .u_list{margin:15px 10px 10px;}
+.right .cont .u_list .title_1 .p1{margin:5px 20px 0 5px;}
+.right .cont .u_list .title_1 .p2{margin-right: 5px;}
+.right .cont .u_list .title_1 .p3{}
+.right .cont .u_list .title_1 .p3 .span1{padding:2px 5px;color: #666;border: 1px solid #a5a3a8;font-size: 12px;margin-right: 5px;cursor: pointer;}
+.right .cont .u_list h2{font-size: 14px;color: #fff;text-align: center;height: 25px;line-height: 25px;background: #ff9c2b;}
+.right .cont .u_list h2 p{float: left;width: 136px;}
+.right .cont .u_list .title_2 li{}
+.right .cont .u_list .title_2 p{float: left;width: 136px;text-align: center;line-height: 25px;font-size: 14px;color: #666; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.right .cont .u_list .title_2 .p1{margin-top: 3px;}
+.right .cont .u_list .title_2 .p5 .span2{color: #336699;}
+.right .cont .u_list .title_2 .co_1{background: #f1f1f1;}
+
+.btn1{width:100px; height:23px; line-height:15px; background:#ff9c2b; border:none; color:#fff; border-radius: 5px;}
+.btn2{width:55px; height:23px; line-height:15px; background:#ff9c2b; border:none; color:#fff; border-radius: 5px;}
+
+
+
+
+.right .list{width:185px; float:left; margin-right:20px;}
+.right .list h2{height: 30px;line-height: 30px;color: #fff;font-size: 14px;background: #ff9c2b; padding: 0 15px;}
+.right .i0{height: 30px;line-height: 30px;color: #4b4b4b;font-size: 14px;width:173px; background: #eeeced;}
+.right .list li div{color:#336699;} 
+.right .i1{height: 30px;line-height: 30px;color: #4b4b4b;font-size: 14px;width:173px; padding-left: 10px; text-align:left;}
+.right .i1 a{float:left;}
+
+.list2 .b1{width:90px; height:23px; line-height:15px; background:#ff9c2b; border:none; color:#fff; border-radius: 5px; margin-top:5px;}
+.list2 .b2{width:55px; height:23px; line-height:15px; background:#ff9c2b; border:none; color:#fff; border-radius: 5px; margin-left:5px; margin-top:5px;}
+
+.right .cont .brand-list h2 p,.right .cont .brand-list .title_2 p{width:144px}
+.right .cont .brand-list h2 .p1,.right .cont .brand-list .title_2 .p1{width:60px}
+.right .cont .brand-list h2 .p5,.right .cont .brand-list .title_2 .p5{width:180px}
+
+.right .cont .user-list h2 p,.right .cont .user-list .title_2 p{width:246px}
+.right .cont .user-list h2 .p1,.right .cont .user-list .title_2 .p1{width:80px}

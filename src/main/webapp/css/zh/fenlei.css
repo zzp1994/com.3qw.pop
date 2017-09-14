@@ -1,0 +1,34 @@
+
+body,html{
+       width:100%\9;
+       text-align:center\9;
+    }
+    
+.center{width: 1000px; height: 570px; margin: 0 auto; margin-top:10px; text-align:left\9; width:1000px\9;  margin:0 auto\9; margin-top:10px\9;}
+.center .c2 .c22{height: auto; border: 1px solid #d7d7d7;}
+.center .c2 .c22 .s1{height:35px; line-height:35px; border-bottom:1px solid #d7d7d7;margin:10px;}
+.center .c2 .c22 .s1 h2{font-weight: bold; font-size: 14px;}
+
+
+.wrap{float:right;}
+.wrap h1{font-size: 18px;color: #990000;font-weight: normal;border-bottom: 1px solid #990000;margin-top: 0px;width: 750px;padding-top: 5px;padding-right: 0;padding-bottom: 15px;padding-left: 0;}
+.main{border:1px solid #dbdbdb;padding:10px;margin:0 10px 10px;}
+.main_m{width:197px;height:250px;border:1px solid #ccc;background-color:#fff;float:left;overflow-x:hidden;overflow-y:auto;}
+.main_m ul li{line-height:25px;cursor:pointer;width:197px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.main_m ul li span{float:right;padding:10px 10px 0 0; margin-top:-25px\9;}
+.main_m ul li a{padding-left:10px;}
+.original{width:197px;height:250px;background-color:#f3f3f3;float:left;overflow-x:hidden;overflow-y:auto;}
+.main_m_fir{width:197px;}
+.main_m_sec{width:197px;}
+.original ul{display:none;}
+.main_b{clear:both;margin-top:10px;}
+.btn_red {width: 86px;height: 28px;border: 0 none;text-align: center;line-height: 20px;vertical-align: middle;color: #fff;cursor: pointer;}
+.color{color:red; background: #ffffcd;}
+
+
+.center .c2 .c22 .app{min-height: 30px;line-height: 30px; margin-top:5px; display: block; border:1px solid #ffdbab; padding-left:10px;background-color:#FFFBF2;}
+.center .c2 .c22 .app span{font-size:12px;color:#ff7300;font-weight:bold;margin:0 5px;}
+.center .c2 .c22 .s3{text-align: center; margin:10px 0 10px 0; }
+.center .c2 .c22 .s3{ margin:20px 0 0 260px; width: 295px; height: 40px; background: #fb4700; border-radius: 5px; line-height:40px;}
+.center .c2 .c22 .s3  a{color:#ffffff; font-size: 18px;}
+.center .c2 .c22 .s3  a:hover{color:#fff;}

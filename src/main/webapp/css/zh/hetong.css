@@ -1,0 +1,43 @@
+/* .conter{width:100%; height:auto; background: #f3ddb3;} */
+.conter1{width: 1150px; height: auto; background: #efefef; margin: 0 auto; font-family:微软雅黑;padding:0 30px;}
+.conter1 h3{font-size:14px;  font-weight:bold; line-height:30px;}
+.conter1 p{line-height:30px; font-size:14px; margin:0 0 10px 20px;}
+
+.conter1 .top{height: 135px; text-align: center;}
+.conter1 .top h1{ line-height: 30px; font-size: 24px; padding-top: 35px;}
+
+.conter1 .top1{ height: auto; line-height: 25px; }
+.conter1 .top1 h2{font-size: 16px;  font-weight: bold; margin-left:4px; display: block;}
+.conter1 .top1 p{font-size: 14px; width:450px; overflow: hidden; white-space:nowrap; text-overflow:ellipsis;}
+.conter1 .top1 p span{width:110px; display: inline-block;text-align:right; float:left;}
+.top1 .txt-line{width:200px;}
+.conter1 .he{clear:both;height: auto; line-height: 25px;  font-size: 14px; text-indent:24px;}
+.p1{margin-bottom:20px;}
+.mmf-mod{width:500px;}
+
+
+.conter1 .he1 table{margin:10px 0;}
+.conter1 .he1 table td{border:1px solid #d0d0d0; height:30px; line-height:20px; width:165px; text-align:center;}
+
+.conter1 .he2{margin-top:20px;}
+.conter1 .he3 .he3_l{ clear:both;}
+.he3_l td{height:40px;padding:2px 8px;border:1px solid #d0d0d0;}
+.other-txt{display:inline-block;width:400px;height:30px;margin:0;padding:0;border:0;border-bottom:1px solid #000;outline:none;background-color:transparent;}
+
+.conter1 .he3 .he3_l span{width:320px; display:block; margin-left:20px; float:left; line-height:20px; font-size:14px;}
+
+.conter1 .he4  table{margin:10px 0;}
+.conter1 .he4 table td{border:1px solid #d0d0d0; height:50px; line-height:50px; width:260px; text-align:center;}
+.conter1  i{color:#ff4900;}
+
+.txt-line{display:inline-block;min-height:20px;margin:0;padding:0;border:0;border-bottom:1px solid #000;outline:none;background-color:transparent;text-align:center;font-size:14px;line-height:20px;}
+.conter1 .txt-line{min-width:200px;}
+.accept{text-align:center;padding:50px 0;cursor:pointer;}
+
+.fhui{position: fixed; top:40px; left:1558px; width:80px; height:30px; line-height:30px;  background:#CDBA96; text-align:center; }
+.fhui a{font-size:16px; color:#ffffff; font-weight: bold; display: block;}
+.fhui a:hover{background:#ff9c2b;}
+
+.h_r{float:right;display:block;width:420px;padding-right:20px;}
+
+.f-tal{text-align:left;}
